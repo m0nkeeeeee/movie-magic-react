@@ -1,51 +1,32 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #030014;
+
+    --color-light-100: #cecefb;
+    --color-light-200: #a8b5db;
+
+    --color-gray-100: #9ca4ab;
+    --color-dary-100: #0f0d23;
+
+    --fontdm-sans: "DM Sans", sans-serif;
+    --breakpoint-xs: 480px;
+
+    --background-image-hero-pattern: urkl("/hero-bg/png");
 }
 
+@layer base {
 
-body {
+    body{
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        background: #030014;
+    }
 
-  padding: 40px;
-  background-color: #151515;
-  font-family: "Franklin Gothic Medium", Arial;
-
-}
-
-
-h2 {
-  color: #f3f3f3;
-  text-align:center;
-  margin-bottom: 30px;
-  font-size: 28px;
-
-
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width:1024px;
-  margin: 0 auto;
-}
-
-.card{
-    border: 1px solid #4b5362;
-    padding: 20px;
-    margin: 10px;
-    background-color: #31363f;
-    border-radius: 10px;
-    min-height: 100px;
-
-}
-
-button{
-  border: none;
-  font-size: 30px;
-  background-color: transparent;
-  width: 100%;
-  text-align: right;
-  cursor:pointer;
+    h1{
+        @apply mx-auto max-w-4xl text-center text-5xl font-bold leading-tight tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
+    }
 }
