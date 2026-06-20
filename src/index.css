@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @theme {
     --color-primary: #030014;
@@ -10,7 +13,7 @@
     --color-light-200: #a8b5db;
 
     --color-gray-100: #9ca4ab;
-    --color-dary-100: #0f0d23;
+    --color-dark-100: #0f0d23;
 
     --fontdm-sans: "DM Sans", sans-serif;
     --breakpoint-xs: 480px;
